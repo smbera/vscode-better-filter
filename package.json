@@ -1,0 +1,84 @@
+{
+  "name": "vscode-better-filter",
+  "displayName": "Better Filter",
+  "description": "filter line",
+  "version": "1.0.0",
+  "icon": "images/icon.png",
+  "publisher": "Jawnha",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": {
+    "name": "Jawnha",
+    "url": "https://github.com/smbera"
+  },
+  "galleryBanner": {
+    "color": "#272729",
+    "theme": "dark"
+  },
+  "bugs": {
+    "url": "https://github.com/smbera/vscode-better-filter/issues",
+    "email": "smbera@163.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smbera/vscode-better-filter.git"
+  },
+  "engines": {
+    "vscode": "^1.47.0"
+  },
+  "categories": [
+		"Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+		"onCommand:vscode-better-filter.includeLinesWithRegex",
+		"onCommand:vscode-better-filter.includeLinesWithString",
+		"onCommand:vscode-better-filter.excludeLinesWithRegex",
+		"onCommand:vscode-better-filter.excludeLinesWithString"
+  ],
+  "main": "./dist/extension.js",
+  "browser": "./dist/web/extension.js",
+  "contributes": {
+    "commands": [
+	  	{
+        "title": "Better Filter: Include Lines with Regex",
+        "command": "onCommand:vscode-better-filter.includeLinesWithRegex"
+			},
+			{
+        "title": "Better Filter: Include Lines with String",
+        "command": "onCommand:vscode-better-filter.includeLinesWithString"
+			},
+			{
+        "title": "Better Filter: Exclude Lines with Regex",
+        "command": "onCommand:vscode-better-filter.excludeLinesWithRegex"
+			},
+			{
+        "title": "Better Filter: Exclude Lines with String",
+        "command": "onCommand:vscode-better-filter.excludeLinesWithString"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "onCommand:vscode-better-filter.includeLinesWithString",
+        "key": "alt+f"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "watch": "webpack --watch",
+    "compile-web": "webpack --config webpack.web.config.js",
+    "package": "webpack --mode production --devtool hidden-source-map && npm run compile-web",
+    "lint": "eslint src --ext ts --fix"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.47.0",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.45.0",
+    "esbuild-loader": "^2.20.0",
+    "eslint": "^8.31.0",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.9.4",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^5.0.0"
+  }
+}
