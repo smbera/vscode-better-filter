@@ -2,7 +2,7 @@
   "name": "vscode-better-filter",
   "displayName": "Better Filter",
   "description": "Filter line by string or Regex.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "icon": "images/icon.png",
   "publisher": "Jawnha",
   "license": "SEE LICENSE IN LICENSE",

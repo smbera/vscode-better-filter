@@ -16,11 +16,11 @@ Filter line by string or Regex.
 1. [Marketplace](https://marketplace.visualstudio.com/items?itemName=Jawnha.vscode-better-filter)
 2. Search `Better Filter` in vscode extensions.
 
-![search](images/search.jpg)
+![search](https://raw.githubusercontent.com/smbera/vscode-better-filter/master/images/search.jpg)
 
 ## Usage
 
-![list](images/commandlist.jpg)
+![list](https://raw.githubusercontent.com/smbera/vscode-better-filter/master/images/commandlist.jpg)
 
 ### Filter line by input string.
 
