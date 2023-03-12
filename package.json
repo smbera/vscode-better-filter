@@ -1,8 +1,8 @@
 {
   "name": "vscode-better-filter",
   "displayName": "Better Filter",
-  "description": "filter line",
-  "version": "1.0.0",
+  "description": "Filter line by string or Regex.",
+  "version": "1.0.1",
   "icon": "images/icon.png",
   "publisher": "Jawnha",
   "license": "SEE LICENSE IN LICENSE",
